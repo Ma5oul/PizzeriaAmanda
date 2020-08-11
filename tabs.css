@@ -1,0 +1,40 @@
+.tabs-container{
+    width: 90%;
+    margin: auto;
+    padding-bottom: 20px;
+}
+
+.tabHeader{
+    border: none;
+    outline: none;
+    background: transparent;
+    color: #eee;
+    padding: 6px 12px;
+    font-size: 1.2em;
+    cursor: pointer;
+    font-family: 'Raleway', sans-serif;
+}
+
+.active-tab{
+    border: 1px solid #eee !important;
+    border-bottom: none !important;
+}
+
+.tabSection{
+    border: 1px solid #eee;
+    padding: 15px;
+    font-size: 1.2em;
+
+}
+
+.hide-tab{
+    display: none;
+}
+
+.show-tab{
+    display: block;
+}
+
+.priser{
+  color: #ffdf00;
+}

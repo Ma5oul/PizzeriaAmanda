@@ -1,0 +1,265 @@
+/* Landing page */
+
+html{
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Raleway', sans-serif;
+}
+
+/* img{
+    margin-top: 1rem;
+    width: 200px;
+    margin-bottom: -5rem;
+} */
+
+h2{
+  margin: 0;
+}
+
+.gotop{
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+}
+
+.fa-angle-double-up{
+  color: white;
+}
+
+.fa-angle-double-up:hover{
+  color:#97824b;
+}
+
+#landing-page{
+  background-image: url(landingPage1.jpg);
+  background-size: cover;
+  height: 100vh;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.title-background{
+  width: 35%;
+  border: 6px double #97824b; /* double för dubbellinje runtomkring */
+  border-radius: 1px;
+  padding: 25px;
+
+}
+
+.title{
+  text-align: center;
+  color: #fff;    /* #D0D3D4; */
+  font-size: 2em;
+  font-weight: 700;
+}
+
+/* Nav slider , menyn med linjer som glider in*/
+
+.nav-slider{
+  padding: 15px;
+  cursor: pointer;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 0px 0px 4px 0px;
+}
+
+.nav-slider:hover{
+  background-color:#97824b;
+}
+
+.line{
+  background: #eee;
+  height: 5px;
+  margin: 5px;
+  width: 40px;
+  border-radius: 3px;
+}
+
+.line:nth-child(1){  /* för linjen som är längst upp av menyn, annars täcker den skärmen längst upp*/
+  margin-top: 0;
+}
+
+/* Nav-slider bar */
+
+.nav-slider-section{
+  background: rgba(0,0,0,0.8);
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  transform: translateX(-100%); /* blir utanför bilden*/
+}
+
+.close-nav-slider{
+  border: none;
+  outline: none;
+  float: right;
+  background: transparent;
+  color: #97824b;
+  font-size: 2em;
+  padding: 30px;
+  cursor: pointer;
+}
+
+.close-nav-slider:hover{
+  color: red;
+}
+
+.nav-links-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.nav-links{
+  text-decoration: none;
+  color: #eee;
+  font-size: 1.5em;
+}
+
+.nav-links-container li{
+  text-align: center;
+  padding: 10px;
+  list-style: none;
+}
+
+.nav-links:hover{
+  color: #97824b;
+}
+
+.openNav{
+  animation: openNav 0.5s forwards; /*för att hålla kvar menyn när animation är färdig */
+}
+
+.closeNav{
+  animation: closeNav 0.5s forwards;
+}
+
+@keyframes openNav{
+  100%{
+    transform: translateX(0%);
+  }
+}
+
+@keyframes closeNav{
+  0%{
+    transform: translateX(0%);
+  }
+
+  100%{
+    transform: translateX(-100%);
+  }
+}
+
+/* MENY längst ned */
+#menu{
+  background: #000;
+}
+.menu-title{
+  color: #D0D3D4;
+  text-align: center;
+  padding: 25px;
+  font-size: 2em;
+  /* border: 2px double #eee; */
+}
+
+p{
+  color: #eee;
+  font-size: 1.1em;
+}
+
+.menu-price{
+  float: right;
+}
+
+.pizza{
+  color: #97824b;
+}
+
+.pizza h3, .lunch h3{
+  font-size: 1em;
+  color: #FFDF00;
+  font-style: italic;
+}
+
+
+.lunch p{
+  font-size: 1em;
+  color: #97824b;
+  font-style: italic;
+}
+
+.lunch li{
+  color: white;
+}
+
+/* FOOTER */
+
+#restaurant-info{
+  background: #070707;
+  padding: 20px;
+}
+
+.restaurant-info-title{
+  color: #D3CAC8;
+  text-align: center;
+  padding: 20px;
+}
+
+.info-container{
+  display: grid;
+  grid-template-columns: 1fr;  /*kommer stacka över varandra*/
+}
+
+.address-content, .business-hours, .contact-content{
+  padding: 10px;
+}
+
+.address, .hours{
+  font-size: 1.2em !important;
+  text-align: center;
+}
+
+.media{
+  margin-bottom: 0;
+  font-size: 1.2em !important;
+  text-align: center;
+}
+
+a:visited{
+  color: #eee;
+}
+
+a{
+  color: #97824b;
+}
+
+.media a{
+  color: #97824b;
+}
+
+@media screen and (min-width: 768px){
+  .info-container{
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .address-content, .business-hours{
+    border-right: 1px solid #eee;
+    padding: 30px;
+  }
+
+  .contact-content{
+    padding: 30px;
+  }
+
+}
