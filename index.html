@@ -4,16 +4,19 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Pizzeria Amanda </title>
+  
   <link rel="stylesheet" href="main.css">
   <link rel="stylesheet" href="tabs.css">
+  <script defer src="main.js"></script>
+  <script defer src="tabs.js"> </script>
+
   <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/5bd8ffc29f.js" crossorigin="anonymous"></script>
 </head>
 <body>
-
   <main>
     <section id="landing-page">
-      <div class="nav-slider">
+      <div tabindex="0" class="nav-slider">
         <div class="line"></div>
         <div class="line"></div>
         <div class="line"></div>
@@ -34,7 +37,7 @@
 
     <section id="menu">
       <h2 class="menu-title"> Meny </h2>
-      <section class="tabs-contanier">
+      <section class="tabs-container">
         <section class="tabs">
           <button class="tabHeader active-tab" data-tab="1">Pizza</button> <!-- data tab för att se active class, vilken länk de har klickat på-->
           <button class="tabHeader" data-tab="2">Kebab</button>
@@ -118,7 +121,6 @@
           <li><p>KEBABTALLRIK <b class='priser'>95:- </b> </p> Kebabkött, pommes, strips, tomat, gurka, sallad, peperoni, kebabsås </li>
           <li><p>KEBABRULLE <b class='priser'>95:- </b> </p> Tunnbröd, isbergssallad, tomat, gurka, lök, kebabkött, kebabsås </li>
           <li><p>MEGARULLE <b class='priser'>100:- </b> </p> Tunnbröd, isbergssallad, tomat, gurka, lök, kebabkött, strips, kebabsås </li>
-
           </ol>
 
         </section>
@@ -128,7 +130,6 @@
           <li><p>KYCKLING I BRÖD <b class='priser'>90:- </b> </p> Tomat, gurka, sallad, aioli eller kebabsås </li>
           <li><p>KYCKLINGTALLRIK <b class='priser'>100:- </b> </p> Pommes strips, tomat, gurka, sallad, aioli eller kebabsås </li>
           <li><p>KYCKLINGRULLE <b class='priser'>100:- </b> </p> Tunnbröd, isbergssallad, tomat, gurka, lök, kyckling, kebabsås </li>
-
           </ol>
 
         </section>
@@ -145,7 +146,6 @@
           <li><p>VEGETABILISK TALLRIK <b class='priser'>85:- </b> </p> Champinjoner, lök, oliver, sparris, ananas </li>
           <li><p>TONFISKSALLAD <b class='priser'>90:- </b> </p> Tonfisk, champinjoner, ägg </li>
           <li><p>KEBABSALLAD <b class='priser'>90:- </b> </p> Lök, champinjoner, kebabkött, kebabsås </li>
-
           </ol>
 
         </section>
@@ -182,42 +182,31 @@
           <p class="hours"> Måndag-Torsdag: 11-21 </p>
           <p class="hours"> Fredag-Lördag: 11-22 </p>
           <p class="hours"> Söndag: 12-21 </p>
-
         </section>
 
         <section class="contact-content"> <!-- sociala medier -->
           <h2 class="restaurant-info-title"> <i class="fas fa-users"></i> Följ oss </h2>
           <p class="media"> <a href='https://www.facebook.com/PizzeriaAmandaToreboda/' target='_blank'> <i class='fab fa-facebook'></i> Facebook </a></p>
         </section>
-
       </section>
-
     </section>
 
     <a id='top' class="gotop" href="#landing-page"> <i class="fas fa-angle-double-up fa-3x"></i> </a>
 
     <script>
+      window.onscroll = function() {scrollFunction()};
 
-    window.onscroll = function() {scrollFunction()};
+      function scrollFunction(){
+        var goTop = document.getElementById('top');
 
-    function scrollFunction(){
-      var goTop = document.getElementById('top');
-      console.log(600<window.scrollY);
-
-      if(600<window.scrollY){
-        goTop.style.display = "block";
+        if(600<window.scrollY){
+          goTop.style.display = "block";
+        }
+        else{
+          goTop.style.display = "none";
+        }
       }
-      else{
-        goTop.style.display = "none";
-      }
-    }
-
-
     </script>
-
   </main>
-  <script src="main.js"></script>
-  <script src="tabs.js"> </script>
-
 </body>
 </html>

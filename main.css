@@ -10,28 +10,8 @@ body {
   font-family: 'Raleway', sans-serif;
 }
 
-/* img{
-    margin-top: 1rem;
-    width: 200px;
-    margin-bottom: -5rem;
-} */
-
 h2{
   margin: 0;
-}
-
-.gotop{
-  position: fixed;
-  bottom: 10px;
-  right: 10px;
-}
-
-.fa-angle-double-up{
-  color: white;
-}
-
-.fa-angle-double-up:hover{
-  color:#97824b;
 }
 
 #landing-page{
@@ -46,16 +26,18 @@ h2{
 }
 
 .title-background{
-  width: 35%;
-  border: 6px double #97824b; /* double för dubbellinje runtomkring */
-  border-radius: 1px;
-  padding: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 35vw;
+  border: 6px double #97824b;
+  padding: 1.5rem;
 
 }
 
 .title{
   text-align: center;
-  color: #fff;    /* #D0D3D4; */
+  color: #fff;
   font-size: 2em;
   font-weight: 700;
 }
@@ -226,14 +208,10 @@ p{
   padding: 10px;
 }
 
-.address, .hours{
-  font-size: 1.2em !important;
-  text-align: center;
-}
-
-.media{
-  margin-bottom: 0;
-  font-size: 1.2em !important;
+.address, 
+.hours,
+.media {
+  font-size: 1.2em;
   text-align: center;
 }
 
@@ -241,11 +219,7 @@ a:visited{
   color: #eee;
 }
 
-a{
-  color: #97824b;
-}
-
-.media a{
+.media a, a{
   color: #97824b;
 }
 
@@ -262,4 +236,18 @@ a{
     padding: 30px;
   }
 
+}
+
+.gotop{
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+}
+
+.fa-angle-double-up{
+  color: white;
+}
+
+.fa-angle-double-up:hover{
+  color:#97824b;
 }
