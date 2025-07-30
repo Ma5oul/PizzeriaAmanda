@@ -49,17 +49,23 @@ h2{
   font-weight: 700;
 }
 
-.country-link{
-  text-align: center;
-  color: #fff;
-  font-size: 2em;
-  font-weight: 700;
+.country-link-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
   border-radius: 20px;
   border: 6px double #97824b;
   padding: 1.5rem;
   background-color: rgba(0, 0, 0, 0.6);
   margin:auto;
   margin-top: 20px;
+}
+
+.country-link{
+  color: #fff;
+  font-size: 2em;
+  font-weight: 700;
 }
 
 /* Nav slider , menyn med linjer som glider in*/
