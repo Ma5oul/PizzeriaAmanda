@@ -11,7 +11,6 @@ openNavClick.onclick = function() {
 }
 
 closeNavClick.onclick = function() {
-
   navSliderSection.classList.remove('openNav');
   navSliderSection.classList.add('closeNav');
 }

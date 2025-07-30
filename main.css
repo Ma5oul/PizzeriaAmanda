@@ -49,6 +49,19 @@ h2{
   font-weight: 700;
 }
 
+.country-link{
+  text-align: center;
+  color: #fff;
+  font-size: 2em;
+  font-weight: 700;
+  border-radius: 20px;
+  border: 6px double #97824b;
+  padding: 1.5rem;
+  background-color: rgba(0, 0, 0, 0.6);
+  margin:auto;
+  margin-top: 20px;
+}
+
 /* Nav slider , menyn med linjer som glider in*/
 
 .nav-slider{
@@ -73,7 +86,7 @@ h2{
   border-radius: 3px;
 }
 
-.line:nth-child(1){  /* för linjen som är längst upp av menyn, annars täcker den skärmen längst upp*/
+.line:first-child{  /* för linjen som är längst upp av menyn, annars täcker den skärmen längst upp*/
   margin-top: 0;
 }
 
