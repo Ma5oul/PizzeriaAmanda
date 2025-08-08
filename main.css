@@ -56,14 +56,14 @@ h2{
   gap: 20px;
   border-radius: 20px;
   border: 6px double #97824b;
-  padding: 1.5rem;
+  padding: 0.5rem;
   background-color: rgba(0, 0, 0, 0.6);
   margin-top: 20px;
 }
 
 .country-link{
   color: #fff;
-  font-size: 2em;
+  font-size: 1em;
   font-weight: 700;
 }
 
